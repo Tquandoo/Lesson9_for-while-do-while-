@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <label for="number">Hãy nhập vào 1 số</label>
+</br>
+    <input type="number" id ="number">
+    <button type="button" onclick="convert()">Ok</button>
+    <script>
+        function convert(){
+            let a = document.getElementById("number").value
+            let b = a.toString();
+            let reversed = '';
+            console.log (b);
+            for(let i = b.length-1; i>=0; i--){
+                reversed+=b[i];
+            }
+            
+            console.log(reversed);
+            return reversed;
+        }
+        convert();
+    </script>
+</body>
+</html>
